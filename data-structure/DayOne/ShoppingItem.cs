@@ -2,15 +2,12 @@
 
 internal class ShoppingItem
 {
-    public int ItemId { get; set; }
     public string ItemName { get; set; }
     public int ItemAmount { get; set;}
 
-    public ShoppingItem(string ItemName, int ItemAmount)
+    public ShoppingItem(string itemName, int itemAmount)
     {
-        this.ItemName = ItemName;
-        this.ItemAmount = ItemAmount;
+        this.ItemName = itemName;
+        this.ItemAmount = itemAmount;
     }
-
-
 }
