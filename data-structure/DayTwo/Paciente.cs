@@ -2,17 +2,16 @@
 
 internal class Paciente
 {
-    private static int ultimoId = 0;
-
     public int Id { get; set; }
     public string Nome { get; set; }
-    public string EstadoDeSaude { get; set; }
-    public int ProximoPaciente { get; set; }
+    public string EstadoSaude { get; set; }
+    public Paciente? ProximoPaciente { get; set; }
 
-    public Paciente(string Nome, string EstadoDeSaude)
+    public Paciente(int id, string nome, string estadoSaude)
     {
-        this.Nome = Nome;
-        this.EstadoDeSaude = EstadoDeSaude;
-        this.Id = ultimoId++;
+        this.Id = id;
+        this.Nome = nome;
+        this.EstadoSaude = estadoSaude;
+        this.ProximoPaciente = null;
     }
 }
